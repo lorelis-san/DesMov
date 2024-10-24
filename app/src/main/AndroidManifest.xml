@@ -4,10 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
-
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
         tools:targetApi="31">
+
         <activity
             android:name=".BaseActivity"
             android:exported="false" />
@@ -33,13 +32,19 @@
             android:exported="false" />
         <activity
             android:name=".GetStartedActivity"
-            android:exported="true">
+            android:exported="true" />
+
+        <!-- SplashActivity es la actividad de inicio -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"> <!-- Debe ser exportado para Android 12 y superiores -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
