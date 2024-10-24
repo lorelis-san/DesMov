@@ -15,6 +15,11 @@
     <color name="blue_5">#3B7DD8</color>
     <color name="card_graph_bg_color">#4A91F2</color>
     <color name="graph_heading_color">#FFFFFF</color>
-    <color name="textSplash">#4CC15B</color>
-    <color name="borderline">#0F5234</color>
+    <!--Splash:    -->
+    <color name="textSplash">#35813F</color>
+    <color name="borderline">#164235</color>
+    <color name="background_screen">#FF000000</color>
+
+    <!--Splash:    -->
+
 </resources>
